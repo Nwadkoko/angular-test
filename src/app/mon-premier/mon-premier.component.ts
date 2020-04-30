@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MonPremierComponent implements OnInit {
 
+  premierName = 'LeFast';
+  premierStatus = 'rapide';
+
   constructor() { }
 
   ngOnInit(): void {
