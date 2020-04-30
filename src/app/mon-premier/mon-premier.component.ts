@@ -15,4 +15,8 @@ export class MonPremierComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getStatus() {
+    return this.premierStatus;
+  }
+
 }
