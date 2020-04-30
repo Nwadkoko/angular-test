@@ -6,8 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'mon deuxième projet';
   isAuth = false;
+
+  appareilOne = 'test1';
+  appareilTwo = 'test2';
+  appareilThree = 'test3';
 
   constructor() {
     setTimeout(
@@ -15,5 +18,9 @@ export class AppComponent {
         this.isAuth = true;
       }, 4000
     );
+  }
+
+  onAllumer() {
+    console.log('On allume tout');
   }
 }

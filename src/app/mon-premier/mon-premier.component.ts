@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-mon-premier',
@@ -7,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MonPremierComponent implements OnInit {
 
-  premierName = 'LeFast';
-  premierStatus = 'rapide';
+  @Input() appareilName: string;
+
+  appareilStatus = 'éteins';
 
   constructor() { }
 
@@ -16,7 +17,7 @@ export class MonPremierComponent implements OnInit {
   }
 
   getStatus() {
-    return this.premierStatus;
+    return this.appareilStatus;
   }
 
 }

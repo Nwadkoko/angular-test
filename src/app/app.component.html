@@ -3,11 +3,13 @@
     <div class="col-xs-12">
       <h2>MesPremiers</h2>
       <ul class="list-group">
-        <app-mon-premier></app-mon-premier>
-        <app-mon-premier></app-mon-premier>
-        <app-mon-premier></app-mon-premier>
+        <app-mon-premier [appareilName]="appareilOne"></app-mon-premier>
+        <app-mon-premier [appareilName]="appareilTwo"></app-mon-premier>
+        <app-mon-premier [appareilName]="appareilThree"></app-mon-premier>
       </ul>
-      <button class="btn btn-success" [disabled]="!isAuth">Tout ralentir</button>
+      <button class="btn btn-success"
+              [disabled]="!isAuth"
+              (click)="onAllumer()">Tout allumer</button>
     </div>
   </div>
 </div>
